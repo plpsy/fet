@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="hpdspua.com.ti.ccstudio.buildDefinitions.C6000.ProjectType.2055717560" name="C6000" projectType="com.ti.ccstudio.buildDefinitions.C6000.ProjectType">
+<configuration artifactExtension="out" artifactName="hpdspua" description="" errorParsers="org.eclipse.rtsc.xdctools.parsers.ErrorParser;com.ti.ccstudio.errorparser.CoffErrorParser;com.ti.ccstudio.errorparser.AsmErrorParser;com.ti.ccstudio.errorparser.LinkErrorParser" id="com.ti.ccstudio.buildDefinitions.C6000.Debug.843075771" name="Debug" parent="com.ti.ccstudio.buildDefinitions.C6000.Debug">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.DebugToolchain.114882291" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerDebug.164424925">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1709586295" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C6000.GenericC64xPlusDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.0"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
+<listOptionValue builtIn="false" value="XDC_VERSION=3.20.03.63"/>
+<listOptionValue builtIn="false" value="RTSC_PRODUCTS=com.ti.mcsdk:1.01.00.00;com.ti.rtsc.NDK:2.20.2.22;com.ti.rtsc.SYSBIOS:6.30.02.42;ti.pdk:1.00.00.06;"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=rtscApplication:executable"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1421256862" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="7.0.3" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerDebug.258540475" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING.1434965293" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION.528991067" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION" value="64+" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DEFINE.1655893021" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="C6474"/>
+<listOptionValue builtIn="false" value="_INCLUDE_NIMU_CODE"/>
+<listOptionValue builtIn="false" value="_NDK_EXTERN_CONFIG"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH.539630914" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${BIOS_CG_ROOT}\packages\ti\bios\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/src&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_PDK_INSTALL_DIR}\packages\ti\csl\C6474\csl_c6474\inc&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_PDK_INSTALL_DIR}\packages\ti\drv\emac&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_PDK_INSTALL_DIR}\packages\ti\drv\emac\inc&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_MCSDK_INSTALL_DIR}\packages\ti\platform\inc&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${NDK_INSTALL_DIR}\packages\ti\ndk\inc&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${NDK_INSTALL_DIR}\packages\ti\ndk\inc\tools&quot;"/>
+</option>
+<inputType id="com.ti.rtsc.buildDefinitions.XDC.inputType__CFG_SRCS.1672344709" name="" superClass="com.ti.rtsc.buildDefinitions.XDC.inputType__CFG_SRCS"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerDebug.164424925" name="C6000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerDebug">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE.594457306" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE" value="&quot;hpdspua.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE.1118264497" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE" value="&quot;hpdspua.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.generatedLinkerCommandFiles.1914519042" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.generatedLinkerCommandFiles" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;$(GEN_CMDS_QUOTED)&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY.2019029666" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;platform_utils_evm6474l.lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;csl_c6474.lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;emac_drv_c6474.lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;nimu_eth.lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH.2010297885" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_MCSDK_INSTALL_DIR}\packages\ti\platform\nimu\lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_PDK_INSTALL_DIR}\packages\ti\csl\c6474\csl_c6474\lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_PDK_INSTALL_DIR}\packages\ti\drv\emac\lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_MCSDK_INSTALL_DIR}\packages\ti\platform\lib&quot;"/>
+</option>
+</tool>
+<tool id="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.1492649910" name="XDCtools" superClass="com.ti.rtsc.buildDefinitions.XDC_3.16.tool">
+<option id="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.XDC_PATH.155577045" superClass="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.XDC_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${BIOS_CG_ROOT}/packages&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_PDK_INSTALL_DIR}/packages&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${NDK_INSTALL_DIR}/packages&quot;"/>
+<listOptionValue builtIn="false" value="&quot;C:\Program Files\Texas Instruments\mcsdk_1_01_00\demos\evmc6474l&quot;"/>
+</option>
+<option id="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.OUTPUT_DIR.1329681661" superClass="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.OUTPUT_DIR" value="&quot;configPkg&quot;" valueType="string"/>
+<option id="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.TARGET.1433594384" superClass="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.TARGET" value="ti.targets.C64P" valueType="string"/>
+<option id="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.PLATFORM.1831221250" superClass="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.PLATFORM" value="custom.hpdspua.evm6474l" valueType="string"/>
+<option id="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.CODEGEN_TOOL_DIR.8937747" superClass="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.CODEGEN_TOOL_DIR" value="&quot;${CG_TOOL_ROOT}&quot;" valueType="string"/>
+<option id="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.BUILD_PROFILE.1309096218" superClass="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.BUILD_PROFILE" value="debug" valueType="string"/>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+</configuration>
+<configuration artifactExtension="out" artifactName="hpdspua" description="" id="com.ti.ccstudio.buildDefinitions.C6000.Release.815569764" name="Release" parent="com.ti.ccstudio.buildDefinitions.C6000.Release">
+<toolChain id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.ReleaseToolchain.1561679258" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerRelease.289095855">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1685215540" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=com.ti.ccstudio.deviceModel.C6000.GenericC64xPlusDevice"/>
+<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
+<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+<listOptionValue builtIn="false" value="CCS_MBS_VERSION=4.2.0"/>
+<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE="/>
+<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
+<listOptionValue builtIn="false" value="XDC_VERSION=3.20.00.41"/>
+<listOptionValue builtIn="false" value="RTSC_PRODUCTS=com.ti.rtsc.NDK:2.20.02.20;com.ti.rtsc.SYSBIOS:6.30.02.42;ti.mcsdk:1.00.00.08;ti.pdk:1.00.00.06;"/>
+<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.223084126" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="7.0.0" valueType="string"/>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerRelease.1327848236" name="C6000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.compilerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING.343779834" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DIAG_WARNING" valueType="stringList">
+<listOptionValue builtIn="false" value="225"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION.1132645140" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.SILICON_VERSION" value="64+" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH.727394066" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.INCLUDE_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${BIOS_CG_ROOT}\packages\ti\bios\include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${PROJECT_ROOT}/src&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_PDK_INSTALL_DIR}\packages\ti\csl\C6474\csl_c6474\inc&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_PDK_INSTALL_DIR}\packages\ti\drv\emac&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_PDK_INSTALL_DIR}\packages\ti\drv\emac\inc&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_MCSDK_INSTALL_DIR}\packages\ti\platform\inc&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${NDK_INSTALL_DIR}\packages\ti\ndk\inc&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${NDK_INSTALL_DIR}\packages\ti\ndk\inc\tools&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DEFINE.1673540834" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.compilerID.DEFINE" valueType="definedSymbols">
+<listOptionValue builtIn="false" value="C6474"/>
+<listOptionValue builtIn="false" value="_INCLUDE_NIMU_CODE"/>
+<listOptionValue builtIn="false" value="_NDK_EXTERN_CONFIG"/>
+</option>
+<inputType id="com.ti.rtsc.buildDefinitions.XDC.inputType__CFG_SRCS.5516442" name="" superClass="com.ti.rtsc.buildDefinitions.XDC.inputType__CFG_SRCS"/>
+</tool>
+<tool id="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerRelease.289095855" name="C6000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.exe.linkerRelease">
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE.615629994" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.OUTPUT_FILE" value="&quot;hpdspua.out&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE.2019278936" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.MAP_FILE" value="&quot;hpdspua.map&quot;" valueType="string"/>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY.867763308" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.LIBRARY" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;platform_utils_evm6474l.lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;csl_c6474.lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;emac_drv_c6474.lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;nimu_eth.lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH.852348225" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.SEARCH_PATH" valueType="stringList">
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_MCSDK_INSTALL_DIR}\packages\ti\platform\nimu\lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_PDK_INSTALL_DIR}\packages\ti\csl\c6474\csl_c6474\lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_PDK_INSTALL_DIR}\packages\ti\drv\emac\lib&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_MCSDK_INSTALL_DIR}\packages\ti\platform\lib&quot;"/>
+</option>
+<option id="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.generatedLinkerCommandFiles.501789746" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.0.linkerID.generatedLinkerCommandFiles" valueType="libs">
+<listOptionValue builtIn="false" value="&quot;$(GEN_CMDS_QUOTED)&quot;"/>
+</option>
+</tool>
+<tool id="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.2008468045" name="XDCtools" superClass="com.ti.rtsc.buildDefinitions.XDC_3.16.tool">
+<option id="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.CODEGEN_TOOL_DIR.2033374689" superClass="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.CODEGEN_TOOL_DIR" value="&quot;${CG_TOOL_ROOT}&quot;" valueType="string"/>
+<option id="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.TARGET.1249308504" superClass="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.TARGET" value="ti.targets.C64P" valueType="string"/>
+<option id="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.PLATFORM.510167598" superClass="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.PLATFORM" value="custom.hpdspua.evm6474l" valueType="string"/>
+<option id="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.XDC_PATH.1440022493" superClass="com.ti.rtsc.buildDefinitions.XDC_3.16.tool.XDC_PATH" valueType="includePath">
+<listOptionValue builtIn="false" value="&quot;${BIOS_CG_ROOT}/packages&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${MCSDK_INSTALL_DIR}/demos/evmc6474l&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_PDK_INSTALL_DIR}/packages&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${NDK_INSTALL_DIR}/packages&quot;"/>
+<listOptionValue builtIn="false" value="&quot;${TI_MCSDK_INSTALL_DIR}/packages&quot;"/>
+</option>
+</tool>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+</configuration>
+<macros/>
+</project>
+</ManagedProjectBuildInfo>
