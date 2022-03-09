@@ -24,11 +24,11 @@
 /*                                                                          */
 /****************************************************************************/
 // 配置
-char *HostName    = "Tronlong-DSP_C6678";
-char *LocalIPAddr = "10.10.10.5";          // DHCP 模式下设置为 "0.0.0.0"
+char *HostName    = "fet-DSP_C6678";
+char *LocalIPAddr = "192.168.0.1";          // DHCP 模式下设置为 "0.0.0.0"
 char *LocalIPMask = "255.255.255.0";    // 使用 DHCP 时，不用
-char *GatewayIP   = "10.10.10.111";    // 使用 DHCP 时，不用
-char *DomainName  = "x.51dsp.net";         // 使用 DHCP 时，不用
+char *GatewayIP   = "192.168.0.254";    // 使用 DHCP 时，不用
+char *DomainName  = "www.fetcorp.com";         // 使用 DHCP 时，不用
 char *DNSServer   = "0.0.0.0";          // 当不是0时，会用到
 
 int g_ipAddressAlloced = 0;

@@ -2168,9 +2168,9 @@ int fetTcpSocket(SOCKET* psockClient, UINT32 unused)
     {
 
         	/* get a message header from the RapidFET Client */
-        	printf("RFS: reading message header from client...\n");
+//        	printf("RFS: reading message header from client...\n");
         	nRecv = Recv(psockClient, ( char * )&sHdr, sizeof(sHdr));
-        	printf("RFS: Rx %d bytes\n", nRecv);
+//        	printf("RFS: Rx %d bytes\n", nRecv);
         	if (nRecv <= 0)
         	{
         		// client has dropped the connection

@@ -20,7 +20,8 @@
 //#include "haldefs.h"
 #include <stdio.h>
 
-#define HOST_REGS 0
+#define HOST_REGS		0xFFFFFFFF
+
 #define ZERO_HOP 0
 
 FETSTATUS RFDSTATUS_TO_FETSTATUS(RFDSTATUS rfds)
@@ -126,8 +127,8 @@ FETSTATUS rioConfigurationRead (
 		}
 	}
 
-//	printf("RapidFET HAL***: rioConfigurationRead(Port:%d, DestId:%d, HopCount:%d, Offset:%x Count:%d) returning %d\n",
-//		uchLocalPort, ulDestId, uchHopCount, ulOffset, ulWordCount, fsRet);
+//	printf("RapidFET HAL***: rioConfigurationRead(val:0x%08x, DestId:%d, HopCount:%d, Offset:%x Count:%d) returning %d\n",
+//			*(UINT32*)pReadData, ulDestId, uchHopCount, ulOffset, ulWordCount, fsRet);
 
 	return fsRet;
 }

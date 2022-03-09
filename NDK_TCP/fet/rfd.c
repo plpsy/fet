@@ -295,7 +295,8 @@ RFDSTATUS RFD_MaintRead(unsigned char bLargeTT,
 		}
 	}
 
-	printf("RFD: MR %cDev:%04x HC:%d WC:%d Off:0x%lx STR:%d ", bLargeTT?'L':'S', ulDestID, uchHopCount, ulWordCount, ulOffset, ulStride);fflush(stdout);
+#if 0
+//	printf("RFD: MR %cDev:%04x HC:%d WC:%d Off:0x%lx STR:%d ", bLargeTT?'L':'S', ulDestID, uchHopCount, ulWordCount, ulOffset, ulStride);fflush(stdout);
 	switch (ulWordSize)
 	{
 	case 1:
@@ -308,6 +309,7 @@ RFDSTATUS RFD_MaintRead(unsigned char bLargeTT,
 		printf("Data:%08lx %s\n", *(UINT32*)pData, ulWordCount>1?"...":"");
 		break;
 	}
+#endif
 
 	return eRFSRFD_SUCCESS; 
 }
@@ -331,7 +333,8 @@ RFDSTATUS RFD_MaintWrite(unsigned char bLargeTT,
 		return eRFSRFD_ERR;
 	}
 
-	printf("RFD: MW %cDev:%04x HC:%d WC:%d Off:0x%lx STR:%d ", bLargeTT?'L':'S', ulDestID, uchHopCount, ulWordCount, ulOffset, ulStride);fflush(stdout);
+#if 0
+//	printf("RFD: MW %cDev:%04x HC:%d WC:%d Off:0x%lx STR:%d ", bLargeTT?'L':'S', ulDestID, uchHopCount, ulWordCount, ulOffset, ulStride);fflush(stdout);
 	switch (ulWordSize)
 	{
 	case 1:
@@ -344,6 +347,7 @@ RFDSTATUS RFD_MaintWrite(unsigned char bLargeTT,
 		printf("Data:%08lx %s\n", *(UINT32*)pData, ulWordCount>1?"...":"");
 		break;
 	}
+#endif
 
 	return eRFSRFD_SUCCESS; 
 }

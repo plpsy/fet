@@ -66,6 +66,8 @@
 #include "../fet/rfd.h"
 #include "../fet/fetriod.h"
 
+#include <ti/ndk/inc/netmain.h>
+
 /****************************************************************************/
 /*                                                                          */
 /*              ∫Í∂®“Â                                                      */
@@ -218,6 +220,9 @@ Void smain(UArg a0, UArg a1)
 {
 	UINT32 offset = 0;
 	UINT32 data = 0;
+	UINT32 isRead = 1;
+	UINT32 ulDestID = 0xff;
+	unsigned char uchHopCount = 0;
 
 	QueryOrCfgIPAddr();
 
@@ -225,7 +230,14 @@ Void smain(UArg a0, UArg a1)
 	{
 		if(g_testOn)
 		{
-			frdMaintRead(0, 0, 0xff, 0, offset, ePRIORITY_M, &data, 1, 4, 0);
+			if(isRead)
+			{
+				frdMaintRead(0, 0, ulDestID, uchHopCount, offset, ePRIORITY_M, &data, 1, 4, 0);
+			}
+			else
+			{
+				frdMaintWrite(0, 0, ulDestID, uchHopCount, offset, ePRIORITY_M, &data, 1, 4, 0);
+			}
 		}
 		Task_sleep(1000);
 	}
@@ -309,19 +321,24 @@ int frdReadRioReg(				UINT32 ulOffset,
 								UINT32 ulSize,
 								void* pData)
 {
+	UINT16 tmp16;
+	UINT32 tmp32;
 	switch (ulSize)
 	{
 	case 1:
 		*(UINT8*)pData = *(volatile UINT8*)(0x290B000 + ulOffset);
 		break;
 	case 2:
-		*(UINT16*)pData = *(volatile UINT16*)(0x290B000 + ulOffset);
+		tmp16 = *(volatile UINT16*)(0x290B000 + ulOffset);
+		*(UINT16*)pData = (tmp16);
 		break;
 	case 4:
-		*(UINT32*)pData = *(volatile UINT32*)(0x290B000 + ulOffset);
+		tmp32 = *(volatile UINT32*)(0x290B000 + ulOffset);
+		*(UINT32*)pData = (tmp32);
 		break;
 	default:
-		*(UINT32*)pData = *(volatile UINT32*)(0x290B000 + ulOffset);
+		tmp32 = *(volatile UINT32*)(0x290B000 + ulOffset);
+		*(UINT32*)pData = (tmp32);
 	}
 
 	return 0;
@@ -330,6 +347,8 @@ int frdWriteRioReg(				UINT32 ulOffset,
 								UINT32 ulSize,
 								void* pData)
 {
+	UINT16 tmp16;
+	UINT32 tmp32;
 
 	switch (ulSize)
 	{
@@ -337,13 +356,16 @@ int frdWriteRioReg(				UINT32 ulOffset,
 		*(volatile UINT8*)(0x290B000 + ulOffset) = *(UINT8*)pData;
 		break;
 	case 2:
-		*(volatile UINT16*)(0x290B000 + ulOffset) = *(UINT16*)pData;
+		tmp16 = *(UINT16*)pData;
+		*(volatile UINT16*)(0x290B000 + ulOffset) = (tmp16);
 		break;
 	case 4:
-		*(volatile UINT32*)(0x290B000 + ulOffset) = *(UINT32*)pData;
+		tmp32 = *(UINT32*)pData;
+		*(volatile UINT32*)(0x290B000 + ulOffset) = (tmp32);
 		break;
 	default:
-		*(volatile UINT32*)(0x290B000 + ulOffset) = *(UINT32*)pData;
+		tmp32 = *(UINT32*)pData;
+		*(volatile UINT32*)(0x290B000 + ulOffset) = (tmp32);
 	}
 
 	return 0;
@@ -440,7 +462,7 @@ int frdMaintRead(				frdHandle hMaintWindow,
 
 //	Cache_inv((UINT32 *)srioMaintReadBuffer, 128, Cache_Type_ALLD, TRUE);
 
-	*(UINT32*)pData = *srioMaintReadBuffer;
+	*(UINT32*)pData = htonl(*srioMaintReadBuffer);
 
 	return uiCompletionCode;
 }
@@ -468,7 +490,8 @@ int frdMaintWrite(				frdHandle hMaintWindow,
     	srioMaintWriteBuffer = Memory_alloc(heap, 128, 128, NULL);
     }
 
-    *srioMaintWriteBuffer = *(UINT32*)pData;
+
+    *srioMaintWriteBuffer = ntohl(*(UINT32*)pData);
 
 //	Cache_wb((UINT32 *)srioMaintWriteBuffer, 128, Cache_Type_ALLD, TRUE);
 
